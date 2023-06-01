@@ -1,0 +1,21 @@
+<h1 style="text-align: center;">USER COMPONENT</h1>
+<div>
+    <!-- One way binding
+    String interpolation  -->
+    <p>{{age}}</p>
+
+      <!-- Propeties biding  -->
+    <button type="button" [disabled]="isDisabled">Disabled Button</button> 
+
+    <!-- Event binding -->
+   <button type="button" (click)="show('Hello angular')" >Click</button> 
+    <div></div>
+
+    <!-- Two way binding -->
+    <input type="text" [(ngModel)]="name"  (change)="changeName($event)">
+    <p>{{name}}</p>
+
+     <!-- Two way binding -->
+     <!-- <input type="button"  [(ngModel)]="count" (click)="increaseCount(age)">
+     <p>{{count}}</p> -->
+</div>
